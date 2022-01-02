@@ -64,7 +64,7 @@ public class WeakGazeModifier extends DifficultyModifier {
                 "EnableWeaknessGazeModifier",true,"Enable the Weakness Gaze modifier.  This modifier adds the weakness potion effect to the target player of the mob, if the mob can see the player");
         boolean modifierEnabled = modifierEnabledProp.getBoolean();
         Property SpeedLevelMaxLevelProp = config.get(IDENTIFIER,
-                "WeaknessModifierMaxLevel",3,"Maximum weakness level added to the target player when this is triggered.");
+                "WeaknessModifierMaxLevel",1,"Maximum weakness level added to the target player when this is triggered.");
         int maxLevel = SpeedLevelMaxLevelProp.getInt();
         Property difficultyCostPerSpeedLevelProp = config.get(IDENTIFIER,
                 "DifficultyCostPerWeaknessLevel",10,"Cost of each level of Weakness applied to the target player.");
